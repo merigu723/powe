@@ -10,6 +10,11 @@
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Nice to meet you $UserName!"/>
       </input>
+      
+      <input pattern="(requiero información del blog)">
+        <output value ="http://powerjkpop.blogspot.com/" />
+      </input>
+       
 
     </context>
   </input>
