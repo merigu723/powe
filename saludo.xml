@@ -11,11 +11,11 @@
         <output value="Nice to meet you $UserName!"/>
       </input>
       
-      <context>
+      <peticion>
       <input pattern="(requiero información del blog)">
         <output value="http://powerjkpop.blogspot.com/!"/>
       </input>
-        </context>
+        </peticion>
 
     </context>
   </input>
