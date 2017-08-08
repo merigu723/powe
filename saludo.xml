@@ -11,10 +11,6 @@
         <output value="Nice to meet you $UserName!"/>
       </input>
       
-       <context if="empty($Userpeticion)">
-      <output value="en que te puedo colaborar?"/>
-         <input pattern="(requiero informacion del blog)"
-           <output value="aqui puedes ingresar http://powerjkpop.blogspot.com/>
 
     </context>
   </input>
