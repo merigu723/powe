@@ -12,7 +12,7 @@
       </input>
       
       <input pattern="(requiero información del blog)">
-        <output value="http://powerjkpop.blogspot.com/!"/>
+        <output="http://powerjkpop.blogspot.com/!"/>
       </input>
        
 
