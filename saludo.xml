@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<xsl:stylesheet version="1.0"> 
+
   <context>
   <input pattern="(hello|hi) *">
     <output value="Hello $UserName!" if="full($UserName)"/>
