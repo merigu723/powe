@@ -16,7 +16,7 @@
 
     </context>
     <context if="full($UserName)">
-    <output value=" Hello $UserName! ¿en que te puedo colaborar?"/>
+    <output value="Hello $UserName!, visita nuestro blog: http://powerjkpop.blogspot.com/ "/>
     </context>
      
   </input>
