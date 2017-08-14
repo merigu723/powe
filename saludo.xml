@@ -12,9 +12,9 @@
         <output value="Nice to meet you $UserName!"/>
          
       </input>
-       <context>
+       
          <output value ="en que te puedo colaborar">
-         </context>
+         
 
     </context>
   </input>
