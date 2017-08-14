@@ -12,6 +12,10 @@
         <output value="Nice to meet you $UserName!"/>
        
       </input>
+      <output>
+        <item value="¿en que te puedo colaborar"/> 
+      </output>
+      
       
 
     </context>
