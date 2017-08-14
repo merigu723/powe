@@ -17,7 +17,6 @@
     </context>
     <context if="full($UserName)">
     <output value="¿en que te puedo colaborar $UserName!?"/>
-      </input> 
     </context>
      
   </input>
