@@ -10,11 +10,9 @@
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Nice to meet you $UserName!"/>
-       
+          <output value="¿en que te puedo colaborar"/> 
       </input>
-      <output>
-        <item value="¿en que te puedo colaborar"/> 
-      </output>
+      
       
       
 
