@@ -13,7 +13,7 @@
          
       </input>
        <input pattern="prueba">
-        <var name="prueba" value=$Text"/>
+        <var name="prueba" value=$Text" scope="prueba"/>
        <output value="¿en que te puedo colaborar?"/>
       </input>  
 
