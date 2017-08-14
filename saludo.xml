@@ -12,11 +12,15 @@
         <output value="Nice to meet you $UserName!"/>
          
       </input>
-       <input pattern="prueba">
-        <var name="prueba" value="$Text" scope="prueba"/>
-          <output value="en que te puedo colaborar"/>
-      </input>  
+ 
 
     </context>
+    <context if="full($UserName)">
+      <input pattern="prueba">
+      <var name="prueba" value="$Text" scope="prueba"/>
+      <output value="¿en que te puedo colaborar?"/>
+      </input> 
+    </context>
+     
   </input>
 </context>
