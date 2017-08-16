@@ -20,6 +20,7 @@
       <input pattern="$Text">
         <var name="zipcode" value="$Text" scope="zipcode"/>
       <output value="Hi dude!" if='full($zipcode) and $zipcode == "200" or $zipcode== "201"'/>
+      <output value="Hola dudo!" if='full($zipcode) and $zipcode == "2000" or $zipcode== "2001"'/>
       </input>
  
    
