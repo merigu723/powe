@@ -14,9 +14,15 @@
     </context>
    
     <context if="full($UserName)">
-    <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ 
-                   ¿Si deseas saber el Numero de canal donde puedes ver nuestra programación por favor digita el zipcode de tu ciudad"/>
-    
+    <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
+                   
+                   ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad" if="($zipcode)"/>
+      <input pattern="$Text">
+        <var name="zipcode" value="$Text" scope="zipcode"/>
+      <output value="Hi dude!" if='full($zipcode) and $zipcode == "200"'/>
+      </input>
+ 
+    </context>
     </context>
  
   </input>
