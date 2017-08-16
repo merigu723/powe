@@ -1,8 +1,10 @@
 
   <context>
-  <input pattern="(hello|hi)*">
+  
+    <input pattern="(hello|hi)*">
     <output value="Hello $UserName!" if="full($UserName)" />
-  <input pattern="(hola|buenos dias|buenas tardes|buenas noches|saludos|buen dia)*">
+  
+    <input pattern="(hola|buenos dias|buenas tardes|buenas noches|saludos|buen dia)*">
     <output value="hola $UserName!" if="full($UserNombre)" />
    
     <context if="empty($UserName)">
@@ -27,6 +29,6 @@
       <output value="mucho gusto encantado de conocerte $UserName!" lang="es"/> 
     </context>
   
-
+  </input>
   </input>
 </context>
