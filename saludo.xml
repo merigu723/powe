@@ -19,7 +19,7 @@
                    ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
       <input pattern="$Text">
         <var name="zipcode" value="$Text" scope="zipcode"/>
-      <output value="Hi dude!" if='full($zipcode) and $zipcode == "200" or zipcode== "201"'/>
+      <output value="Hi dude!" if='full($zipcode) and $zipcode == "200" or $zipcode== "201"'/>
       </input>
  
    
