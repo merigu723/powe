@@ -3,7 +3,7 @@
   <input pattern="(hello|hi)*">
     <output value="Hello $UserName!" if="full($UserName)" />
   <input pattern="(hola|buenos dias|buenas tardes|buenas noches|saludos|buen dia)*">
-    <output value="hola $UserName!" if="full($UserName)" />
+    <output value="hola $UserName!" if="full($UserNombre)" />
    
     <context if="empty($UserName)">
       <output value="Hi! What is your name?" />  
@@ -14,11 +14,11 @@
  
     </context>
       
-    <context if="empty($UserName)">
+    <context if="empty($UserNombre)">
       <output value="Saludos ¿como es tu nombre?" />
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
-      <output value="mucho gusto encantado de conocerte $UserName!" lang="es"/>
+      <output value="mucho gusto encantado de conocerte $UserNombre!" lang="es"/>
       </input>
 
    
