@@ -1,9 +1,7 @@
 
   <context>
-  <input pattern="(hello|hi)*" lang="en">
+  <input pattern="(hello|hi|hola)*">
     <output value="Hello $UserName!" if="full($UserName)" lang="en"/>
-    
-   <input pattern="(hola|Buenos dias)*" lang="es">
     <output value="hola $UserName!" if="full($UserName)" lang="es"/>
    
     <context if="empty($UserName)">
@@ -23,6 +21,6 @@
     <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ "/>
     </context>
   
-  </input>
+
   </input>
 </context>
