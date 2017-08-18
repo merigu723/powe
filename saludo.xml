@@ -1,6 +1,9 @@
 <context>
-  <pattern name="Person" value="entity://hitnzipcodes"/>
-  <input pattern="$Person">
-    <var name="PersonName" value='get("name", $Person)'/>
+  <pattern name="City" value="entity://hitnzipcodes"/>
+
+  <input pattern="* (weather|forecast) {[* $City] [* $Date]}">
+    <context>
+      <input pattern="* $City [$Date]"/>
+    </context>
   </input>
 </context>
