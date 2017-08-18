@@ -2,5 +2,6 @@
   <pattern name="Person" value="entity://hitnzipcodes"/>
   <input pattern="$Person">
     <var name="PersonName" value='get("name", $Person)'/>
+    <output value="Nice to meet you $PersonName!"/>
   </input>
 </context>
