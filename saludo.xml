@@ -1,22 +1,30 @@
 <context>
-  <input pattern="(hi|hello) *">
-
-  <!-- Greet user if bot already knows the name -->
-  <!-- We use "full" function here to check if UserName variable exists and has non empty value-->
-  <output value="Hello $UserName" if="full($UserName)"/>
-
-  <!-- "empty" fucntion checks if variable doesn't exist or has empty value -->
-  <context if="empty($UserName)">
-    <!-- Ask user about her name -->
-    <output value="Hi! What is your name?"/>
-
-    <input pattern="$Text">
-      <!-- Store UserName variable with "user" scope -->
-      <var name="UserName" value="$Text" scope="user"/>
-
-      <output value="Nice to meet you $UserName!"/>
+  
+    <input pattern="(hello|hi)*">
+    <output value="Hello $UserName!" if="full($UserName)" />
+   
+    <context if="empty($UserName)">
+      <output value="Hi! What is your name?" />  
+      <input pattern="$Text">
+        <var name="UserName" value="$Text" scope="user"/>
+        <output value="Nice to meet you $UserName!"/>
       </input>
-      <context/> <!-- Jump to the root context while this context is not modal -->
-    </input>
-  </context>
+ 
+    </context>
+   
+    <context if="full($UserName)">
+    <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
+                   
+                   ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
+      <input pattern="$Text">
+        <var name="zipcode" value="$Text" scope="zipcode"/>
+        
+      <output value="Hi dude mundo cruel!" if='full($zipcode) and $zipcode== "85701" or $zipcode== "85702" or $zipcode== "85703" or $zipcode== "85704" or $zipcode== "85705" or $zipcode== "85706" or $zipcode== "85707" or $zipcode== "85708" or $zipcode== "85709" or $zipcode== "85710" or $zipcode== "85711" or $zipcode== "85712" or $zipcode== "85713" or $zipcode== "85714" or $zipcode== "85715" or $zipcode== "85716" or $zipcode== "85717" or $zipcode== "85718" or $zipcode== "85719" or $zipcode== "85720" or $zipcode== "85721" or $zipcode== "85722" or $zipcode== "85723" or $zipcode== "85724" or $zipcode== "85725" or $zipcode== "85726" or $zipcode== "85728" or $zipcode== "85730"'/>
+      <output value="Hola dudo!" if='full($zipcode) and $zipcode == "2000" or $zipcode== "2001"'/>
+      </input>
+ 
+   
+    </context>
+ 
+  </input>
 </context>
