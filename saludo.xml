@@ -1,23 +1,6 @@
 <context>
-  
-    <input pattern="(hello|hi)*">
-    <output value="Hello $UserName!" if="full($UserName)" />
-   
-    <context if="empty($UserName)">
-      <output value="Hi! What is your name?" />  
-      <input pattern="$Text">
-        <var name="UserName" value="$Text" scope="user"/>
-        <output value="Nice to meet you $UserName!"/>
-      </input>
- 
-    </context>
-   
-    <context if="full($UserName)">      
-      <pattern name="hitnzipcodes" value="entity://hitnzipcodes"/>
-        <input pattern="$hitnzipcodes">
-        <var name="PersonName" value='get("name", $hitnzipcodes)'/>
-      </input>
-    </context>
- 
+  <pattern name="Person" value="entity://hitnzipcodes"/>
+  <input pattern="$Person">
+    <var name="PersonName" value='get("name", $Person)'/>
   </input>
 </context>
