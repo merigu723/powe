@@ -1,21 +1,30 @@
 <context>
-    <!-- Note that you need to create cities entity in your bot settings -->
-    <pattern name="City" value="entity://hitnzipcodes"/>
-
-    <input pattern="* (weather|forecast) {[* $Date] [* $City]}">
-        <context id="weather">
-            <!-- This context will automatically extend a root one -->
-
-            <output value="There is a nice weather today!" if="empty($City)"/>
-            <output value="Looks like it is nice weather in $City!"/>
-
-            <input>
-                <!-- Once weather context is activated, user can simply ask about different date or city or both of them -->
-                <pattern value="{(* $Date) [* $City]}"/>
-                <pattern value="* $City"/>
-
-                <context id="weather"/> <!-- Jump to the weather context to generate an output -->
-            </input>
-        </context>
-    </input>
+  
+    <input pattern="(hola)*">
+    <output value="Saludos $UserName!" if="full($UserName)" />
+   
+    <context if="empty($UserName)">
+      <output value="Hola! ¿cual es tu nombre?" />  
+      <input pattern="$Text">
+        <var name="UserName" value="$Text" scope="user"/>
+        <output value="Encantado en conocerte $UserName!"/>
+      </input>
+ 
+    </context>
+   
+    <context if="full($UserName)">
+    <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
+                   
+                   ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
+      <input pattern="$Text">
+        <var name="zipcode" value="$Text" scope="zipcode"/>
+        
+      <output value="Nationwide" if='full($zipcode) and $zipcode== "85701" or $zipcode== "85702" or $zipcode== "85703" or $zipcode== "85704" or $zipcode== "85705" or $zipcode== "85706" or $zipcode== "85707" or $zipcode== "85708" or $zipcode== "85709" or $zipcode== "85710" or $zipcode== "85711" or $zipcode== "85712" or $zipcode== "85713" or $zipcode== "85714" or $zipcode== "85715" or $zipcode== "85716" or $zipcode== "85717" or $zipcode== "85718" or $zipcode== "85719" or $zipcode== "85720" or $zipcode== "85721" or $zipcode== "85722" or $zipcode== "85723" or $zipcode== "85724" or $zipcode== "85725" or $zipcode== "85726" or $zipcode== "85728" or $zipcode== "85730" or $zipcode== "85731" or $zipcode== "85732" or $zipcode== "85733" or $zipcode== "85734" or $zipcode== "85735" or $zipcode== "85736" or $zipcode== "85737" or $zipcode== "85739" or $zipcode== "85740" or $zipcode== "85741" or $zipcode== "85742" '/>
+      <output value="Nationwide" if='full($zipcode) and $zipcode == "2000" or $zipcode== "2001"'/>
+      </input>
+ 
+   
+    </context>
+ 
+  </input>
 </context>
