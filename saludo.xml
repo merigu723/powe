@@ -20,7 +20,7 @@
         <var name="zipcode" value="$Text" scope="zipcode"/>
         
       <output value="Nationwide" if='full($zipcode) and $zipcode== "85701" or $zipcode== "85702" or $zipcode== "85703" or $zipcode== "85704" or $zipcode== "85705" or $zipcode== "85706" or $zipcode== "85707" or $zipcode== "85708" or $zipcode== "85709" or $zipcode== "85710" or $zipcode== "85711" or $zipcode== "85712" or $zipcode== "85713" or $zipcode== "85714" or $zipcode== "85715" or $zipcode== "85716" or $zipcode== "85717" or $zipcode== "85718" or $zipcode== "85719" or $zipcode== "85720" or $zipcode== "85721" or $zipcode== "85722" or $zipcode== "85723" or $zipcode== "85724" or $zipcode== "85725" or $zipcode== "85726" or $zipcode== "85728" or $zipcode== "85730" or $zipcode== "85731" or $zipcode== "85732" or $zipcode== "85733" or $zipcode== "85734" or $zipcode== "85735" or $zipcode== "85736" or $zipcode== "85737" or $zipcode== "85739" or $zipcode== "85740" or $zipcode== "85741" or $zipcode== "85742" '/>
-      <output value="Nationwide" if='full($zipcode) and $zipcode == "2000" or $zipcode== "2001" or $zipcode== "85703" '/>
+      <output value="prueba" if='full($zipcode) and $zipcode == "2000" or $zipcode== "2001" or $zipcode== "85703" '/>
       </input>
  
    
