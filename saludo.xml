@@ -13,7 +13,7 @@
     </context>
    
     <context if="full($UserName)">
-    <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
+    <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ />
     
       <context if="full($UserName)">              
       <output value=¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
