@@ -50,7 +50,7 @@
       <output value="puede ver la programación con el cable operador DISH en el canal 843, en el cable operador Directv en el canal 461, en el cable operador ATYT en el canal 3055 o en el cable operador Comcast en el canal 649 if='$zipcopde== "80631" or $zipcopde== "80632" or $zipcopde== "80633" or $zipcopde== "80634" or $zipcopde== "80638" or $zipcopde== "80639" or $zipcopde== "81611" or $zipcopde== "81612"'/>      
       
 	      
-	    </input>
+	
  
    
     </context>
