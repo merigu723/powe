@@ -8,7 +8,7 @@
       <input pattern="$Text">
       <var name="UserName" value="$Text" scope="userName"/>
       <output value="Encantado de conocerte $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
-     <context if "full($UserName)">
+     <context if ="full($UserName)">
       <input pattern="$Text">
       <var name="zipcopde" value="$Text" scope="zipcopde"/>
         
