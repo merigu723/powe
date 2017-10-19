@@ -8,7 +8,8 @@
       <input pattern="$Text">
       <var name="UserName" value="$Text" scope="userName"/>
       <output value="Encantado de conocerte $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
-     <input pattern="$Text">
+     <context>
+      <input pattern="$Text">
       <var name="zipcopde" value="$Text" scope="zipcopde"/>
         
       <output value="puede ver la programación con el cable operador DISH en el canal 843" if='$zipcopde== "00601" or $zipcopde== "00602"  or $zipcopde== "00603"  or $zipcopde== "00604"  or $zipcopde== "00605"  or $zipcopde== "00606"  or $zipcopde== "00610"  or $zipcopde== "00611" or $zipcopde== "00612" or $zipcopde== "00613"  or $zipcopde== "00614"  or $zipcopde== "00616"  or $zipcopde== "00617"  or $zipcopde== "00622"  or $zipcopde== "00623"  or $zipcopde== "00624"  or $zipcopde== "00627"  or $zipcopde== "00631"  or $zipcopde== "00631"  or $zipcopde== "00636"  or $zipcopde== "00637"  or $zipcopde== "00638"  or $zipcopde== "00641"  or $zipcopde== "00646"  or $zipcopde== "00647"  or $zipcopde== "00650"  or $zipcopde== "00652"  or $zipcopde== "00653"  or $zipcopde== "00656"  or $zipcopde== "00659" or $zipcopde== "00660"  or $zipcopde== "00662"  or $zipcopde== "00664"  or $zipcopde== "00667"  or $zipcopde== "00669"  or $zipcopde== "00670" '/>
@@ -315,6 +316,6 @@
       <output value="puede ver la programación con el cable operador DISH en el canal 843, en el cable operador Directv en el canal 461, en el cable operador ATYT en el canal 3055, en el cable operador Centurylink en el canal 3055" if= '$zipcopde== "97214" or $zipcopde== "97215" or $zipcopde== "97216" or $zipcopde== "97217" or $zipcopde== "97218" or $zipcopde== "97220" or $zipcopde== "97223" or $zipcopde== "97224" or $zipcopde== "97227" or $zipcopde== "97228" or $zipcopde== "97230" or $zipcopde== "97232" or $zipcopde== "97233" or $zipcopde== "97238" or $zipcopde== "97239" or $zipcopde== "97240" or $zipcopde== "97242" or $zipcopde== "97256" or $zipcopde== "97258" or $zipcopde== "97267" or $zipcopde== "97268" or $zipcopde== "97269" or $zipcopde== "97280" or $zipcopde== "97281" or $zipcopde== "97282" or $zipcopde== "97283" or $zipcopde== "97286" or $zipcopde== "97290" or $zipcopde== "97291" or $zipcopde== "97292" or $zipcopde== "97293"'/>	      
       <output value="puede ver la programación con el cable operador DISH en el canal 843, en el cable operador Directv en el canal 461, en el cable operador ATYT en el canal 3055, en el cable operador Centurylink en el canal 3055" if= '$zipcopde== "97294" or $zipcopde== "97296" or $zipcopde== "97298"'/>	   
 	 </input>
-        
+       </context> 
   </input>
 </context>
