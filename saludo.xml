@@ -7,10 +7,10 @@
       <output value="Hi! What is your name?" />  
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="User"/>
-        <output value="Nice to meet you $UserName!"/>
+        <output value="Encantado de conocerte $UserName!"/>
       </input>
  
-    </context>
+  
    
     <context if="full($UserName)">
     <output value="Hello $UserName!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
@@ -326,5 +326,6 @@
   </context> 
   </input>
 </context>
+	  </context>
 
 	    
