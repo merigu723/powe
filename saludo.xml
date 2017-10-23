@@ -1,7 +1,7 @@
 <context>
    <input pattern="(hello|hi)*">
    
-    <context if="empty($UserName)">
+    <context>
       <output value="Hi! What is your name?" />  
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="User"/>
