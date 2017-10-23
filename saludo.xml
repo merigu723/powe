@@ -6,7 +6,7 @@
     <context if="empty($UserName)">
       <output value="Hi! What is your name?" />  
       <input pattern="$Text">
-        <var name="UserName" value="$Text" scope="user"/>
+        <var name="UserName" value="$Text" scope="User"/>
         <output value="Nice to meet you $UserName!"/>
       </input>
  
@@ -17,7 +17,7 @@
                    
                    ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
       <input pattern="$Text">
-        <var name="zipcode" value="$Text" scope="zipcode"/>
+        <var name="zipcopde" value="$Text" scope="zipcopde"/>
         
       <output value="puede ver la programación con el cable operador DISH en el canal 843" if='$zipcopde== "00601" or $zipcopde== "00602"  or $zipcopde== "00603"  or $zipcopde== "00604"  or $zipcopde== "00605"  or $zipcopde== "00606"  or $zipcopde== "00610"  or $zipcopde== "00611" or $zipcopde== "00612" or $zipcopde== "00613"  or $zipcopde== "00614"  or $zipcopde== "00616"  or $zipcopde== "00617"  or $zipcopde== "00622"  or $zipcopde== "00623"  or $zipcopde== "00624"  or $zipcopde== "00627"  or $zipcopde== "00631"  or $zipcopde== "00631"  or $zipcopde== "00636"  or $zipcopde== "00637"  or $zipcopde== "00638"  or $zipcopde== "00641"  or $zipcopde== "00646"  or $zipcopde== "00647"  or $zipcopde== "00650"  or $zipcopde== "00652"  or $zipcopde== "00653"  or $zipcopde== "00656"  or $zipcopde== "00659" or $zipcopde== "00660"  or $zipcopde== "00662"  or $zipcopde== "00664"  or $zipcopde== "00667"  or $zipcopde== "00669"  or $zipcopde== "00670" '/>
       <output value="puede ver la programación con el cable operador DISH en el canal 843" if='$zipcopde== "00674" or $zipcopde== "00676"  or $zipcopde== "00677"  or $zipcopde== "00678"  or $zipcopde== "00680"  or $zipcopde== "00681"  or $zipcopde== "00682"  or $zipcopde== "00683" or $zipcopde== "00685" or $zipcopde== "00687"  or $zipcopde== "00688"  or $zipcopde== "00690"  or $zipcopde== "00692"  or $zipcopde== "00693"  or $zipcopde== "00694"  or $zipcopde== "00698"  or $zipcopde== "00703" or $zipcopde== "00704"   or $zipcopde== "00705"  or $zipcopde== "00707"  or $zipcopde== "00714"  or $zipcopde== "00715"  or $zipcopde== "00716"  or $zipcopde== "00717"  or $zipcopde== "00718"  or $zipcopde== "00719"  or $zipcopde== "00720"  or $zipcopde== "00721"  or $zipcopde== "00721"  or $zipcopde== "00723" or $zipcopde== "00725"  or $zipcopde== "00726"  or $zipcopde== "00727"  or $zipcopde== "00728"  or $zipcopde== "00729"  or $zipcopde== "00730" '/>
