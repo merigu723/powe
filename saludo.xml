@@ -1,19 +1,18 @@
 <context>
-   <input pattern="(* hello *|* hi * |* hola *)*">
-   
-    <context>
-      <output value="Hola! cual es tu nombre?" />  
-      <input pattern="$Text">
-        <var name="UserName" value="$Text" scope="User"/>
-        
-    <context>
-    <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ "/>
-</context> 
-<context>	      
-<output value="¿En que puedo colaborarte? "/>
- </context>           
-</context>
-</input>
+	<input pattern="(* hello *|* hi * |* hola *)*">
+	<context>
+		<output value="Hola! cual es tu nombre?" />  
+		<input pattern="$Text">
+			<var name="UserName" value="$Text" scope="User"/>
+        <context>
+        <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ "/>
+	</context> 
+	<context>	      
+	<output value="¿En que puedo colaborarte? "/>
+ 	</context>
+		</input>		
+	</context>
+	</input>
 </context>  	   
 	
 	    
