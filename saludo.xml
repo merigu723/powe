@@ -6,9 +6,9 @@
 			<var name="UserName" value="$Text" scope="User"/>
         <context>
         <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ "/>
-	</context> 
 	<context>	      
 	<output value="¿En que puedo colaborarte? "/>
+		</context> 
  	</context>
 		</input>		
 	</context>
