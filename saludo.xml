@@ -324,7 +324,7 @@
     <p>puedes encontrar la información del doctor $nombre aqui:/p>
     <a href="somewebsite.com"></a>
   ]]>
-</output
+	   </output>
 	   
 </input>
 </context> 	   
