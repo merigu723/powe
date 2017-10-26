@@ -318,8 +318,8 @@
       <output value="puede ver la programación con el cable operador DISH en el canal 843, en el cable operador Directv en el canal 461, en el cable operador ATYT en el canal 3055, en el cable operador Centurylink en el canal 3055" if= '$zipcopde== "97294" or $zipcopde== "97296" or $zipcopde== "97298"'/>	   
 <context>
    <pattern name="nombre" value="( mariana | jose | luis )"/>
-   <input pattern="* $nombre *>
-	   <output>
+   <input pattern="* (informacion) $nombre *">
+<output>
   <![CDATA[
     <p>puedes encontrar la información del doctor $nombre aqui:/p>
     <a href="somewebsite.com"></a>
