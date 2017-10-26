@@ -7,7 +7,7 @@
         <var name="UserName" value="$Text" scope="User"/>
         
     <context>
-    <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: <a href=http://powerjkpop.blogspot.com/ </a>
+    <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: <![CDATA[ <a href=http://powerjkpop.blogspot.com/ </a> ]]>
                    
                    ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
       <input pattern="$Text">
