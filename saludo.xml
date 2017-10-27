@@ -334,6 +334,7 @@
   <![CDATA[
     <p>Aqui puedes encontrar información</p>
     <a href="somewebsite.com"> somewebsite.com  $nombre</a>
+    <img src=”http://www.plataformadepacientes.org/wp-content/uploads/2016/12/COMUNICADO-2.jpg”/>
   ]]>
 </output>
 
