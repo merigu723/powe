@@ -334,7 +334,7 @@
   <![CDATA[
     <p>Aqui puedes encontrar información</p>
     <a href="somewebsite.com"> somewebsite.com  $nombre</a>
-    <img src= https://raw.githubusercontent.com/merigu723/powe/master/53f323ff-b34c-4fed-91e0-f300648b69d8.jpeg/>
+    <img src= "https://raw.githubusercontent.com/merigu723/powe/master/53f323ff-b34c-4fed-91e0-f300648b69d8.jpeg"/>
   ]]>
 </output>
 
