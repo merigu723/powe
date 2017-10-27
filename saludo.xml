@@ -10,7 +10,7 @@
           <input pattern="$Text">
           <var name="Respuesta" value="$Text" scope="Respuesta"/>
            <context>
-           <output value="¿digita el zipcode de tu ciudad?" if='$Respuesta=="Si" or $Respuesta =="si" or $Respuesta =="SI"'
+           <output value="¿digita el zipcode de tu ciudad?" if='$Respuesta=="Si" or $Respuesta =="si" or $Respuesta =="SI"'/>
            <input pattern="$Text">
         <var name="zipcopde" value="$Text" scope="zipcopde"/>
         
