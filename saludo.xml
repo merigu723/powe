@@ -7,9 +7,11 @@
         <var name="UserName" value="$Text" scope="User"/>
         
     <context>
-    <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
-                   
-                   ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad" channel="facebook" />
+    <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/ 
+    ¿Deseas saber el Numero de canal de tu ciduad para ver nuestra programación?" channel="facebook" />
+	 <input pattern="$Text">
+		 
+     <var name ="respuesta" value="$Text" scope="respuesta"/>
       
 	   <output>
   <![CDATA[
@@ -19,6 +21,9 @@
       
   ]]>
 </output> 
+		 < context if=($respuesta==si or $respuesta==Si or $respuesta==SI>
+		<output value="Por favor digita el zipcode de tu ciudad"/> 
+			 
 	    <input pattern="$Text">
 
         <var name="zipcopde" value="$Text" scope="zipcopde"/>
@@ -337,7 +342,8 @@
     <img src= "https://raw.githubusercontent.com/merigu723/powe/master/53f323ff-b34c-4fed-91e0-f300648b69d8.jpeg"/>
   ]]>
 </output>
-
+</input>
+</context> 	   
 </input>
 </context> 	   
 </input>
