@@ -21,7 +21,7 @@
       
   ]]>
 </output> 
-		 < context if=($respuesta==si or $respuesta==Si or $respuesta==SI>
+		 < context if= '$respuesta==si'>
 		<output value="Por favor digita el zipcode de tu ciudad"/> 
 			 
 	    <input pattern="$Text">
