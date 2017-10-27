@@ -325,6 +325,7 @@
     <a href="somewebsite.com"> somewebsite.com  $nombre</a>
   ]]>
 </output>
+<output value="Hi from Facebook $UserName!" channel="facebook"/>
 </input>
 </context> 	   
 </input>
