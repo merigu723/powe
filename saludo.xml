@@ -9,8 +9,18 @@
     <context>
     <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
                    
-                   ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"/>
-      <input pattern="$Text">
+                   ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad" channel="facebook" />
+      
+	   <output>
+  <![CDATA[
+    <p>Encantado de conocerte $UserName!!, no olvides visitar nuestro blog:
+    <a href="http://powerjkpop.blogspot.com"> http://powerjkpop.blogspot.com/</a>
+    ¿Si deseas saber el Numero de canal de otra ciduad para ver nuestra programación por favor digita el zipcode de tu ciudad"
+      
+  ]]>
+</output> 
+	    <input pattern="$Text">
+
         <var name="zipcopde" value="$Text" scope="zipcopde"/>
         
       <output value="puede ver la programación con el cable operador DISH en el canal 843" if='$zipcopde== "00601" or $zipcopde== "00602"  or $zipcopde== "00603"  or $zipcopde== "00604"  or $zipcopde== "00605"  or $zipcopde== "00606"  or $zipcopde== "00610"  or $zipcopde== "00611" or $zipcopde== "00612" or $zipcopde== "00613"  or $zipcopde== "00614"  or $zipcopde== "00616"  or $zipcopde== "00617"  or $zipcopde== "00622"  or $zipcopde== "00623"  or $zipcopde== "00624"  or $zipcopde== "00627"  or $zipcopde== "00631"  or $zipcopde== "00631"  or $zipcopde== "00636"  or $zipcopde== "00637"  or $zipcopde== "00638"  or $zipcopde== "00641"  or $zipcopde== "00646"  or $zipcopde== "00647"  or $zipcopde== "00650"  or $zipcopde== "00652"  or $zipcopde== "00653"  or $zipcopde== "00656"  or $zipcopde== "00659" or $zipcopde== "00660"  or $zipcopde== "00662"  or $zipcopde== "00664"  or $zipcopde== "00667"  or $zipcopde== "00669"  or $zipcopde== "00670" '/>
