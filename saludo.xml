@@ -319,12 +319,12 @@
 <context>
    <pattern name="nombre" value="( mariana | jose | luis )"/>
    <input pattern="* (* informacion *) $nombre *">
-<output>   <![CDATA[
-    <p>puedes encontrar la informacion del doctor $nombre aqui 
-    <a href="somewebsite.com"></a>
+<output>
+  <![CDATA[
+    <h3>Here is your name</h3>
+    <a href="somewebsite.com">$UserName</a>
   ]]>
-	   </output>
-	   
+</output>
 </input>
 </context> 	   
 </input>
