@@ -6,7 +6,14 @@
       <var name="UserName" value="$Text" scope="User"/>
         <context>
           <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com/
-				  ¿deseas saber en que canal puedes ver nuestra programación?"/>
+				  ¿deseas saber en que canal puedes ver nuestra programación?" channel="facebook"/>
+	 <output>
+	  <![CDATA[
+	    <p>Encantado de conocerte $UserName!!, no olvides visitar nuestro blog:
+	    <a href="http://powerjkpop.blogspot.com/">http://powerjkpop.blogspot.com/</a></p>
+   	  ]]>
+	</output>
+
           <input pattern="$Text">
           <var name="Respuesta" value="$Text" scope="Respuesta"/>
            <context>
