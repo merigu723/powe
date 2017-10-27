@@ -10,7 +10,8 @@
 	    <output value="Encantado de conocerte $UserName!!, no olvides visitar nuestro blog: http://powerjkpop.blogspot.com               
             ¿Deseas saber el Numero de canal de otra ciduad para ver nuestra programación?"/>
 	      <input pattern="$Text">
-		<var name="respuesta" value="$Text" scope="respuesta"/>  
+		<var name="respuesta" value="$Text" scope="respuesta"/>
+		 <input pattern="$Text">
 		 <output value="por favor digita el zipcode de tu ciudad" if='$respuesta== "si" or $respuesta== "SI" or respuesta =="Si"'/>    
 	        <var name="zipcopde" value="$Text" scope="zipcopde"/>
 	        
@@ -329,7 +330,7 @@
 	  ]]>
 	</output>
 	
-
+        </input>
 	</input>
 	</context> 	   
 	</input>
