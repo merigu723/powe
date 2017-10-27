@@ -319,13 +319,14 @@
 <context>
    <pattern name="nombre" value="( mariana | jose | luis )"/>
    <input pattern="* (* información *) $nombre *">
+	   <output value="Hi from Facebook $UserName!" channel="facebook"/>
 <output>
   <![CDATA[
     <p>Aqui puedes encontrar información</p>
     <a href="somewebsite.com"> somewebsite.com  $nombre</a>
   ]]>
 </output>
-<output value="Hi from Facebook $UserName!" channel="facebook"/>
+
 </input>
 </context> 	   
 </input>
